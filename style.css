@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    background: rgb(89,29,169);
+    background: linear-gradient(0deg, rgba(89,29,169,1) 24%, rgba(5,25,96,1) 100%);
+    /* background-image: url(images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    font-family: sans-serif;
+}
+
+/* ACÁ INICIA EL MENÚ, VA A SER FIJO */
+
+.menu {
+    background-color: rgba(44, 50, 56, 0.26);
+    width: 188.5vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 50%;
+    align-items: center;
+    padding: 0 1%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+}
+
+/* DEBO ENCONTRAR COMO PONERLO EN COLOR DEGRADADO */
+.logo {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.menu-fijo ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration-color: white;
+}
+
+.opciones {
+    margin-left: 28px;
+    font-weight: bold;
+    color: white;
+    /* text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3;
+    /* color: #ccc;  /*  esto da un efecto pixel art */
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.opciones:hover {
+    transform: scale(1.3);
+}
+
+/* QUEDA PENDIENTE DE QUITAR EL COLOR AZUL */
+.nave {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* HASTA AQUÍ VA EL MENÚ E INICIA EL HOME 
+
+ DEBO ENCONTRAR LA FORMA DE QUE EL DESPLAZAMIENTO SEA FIJO ENTRE "VENTANAS" DE HOME-SKILLS-XP-CONTACT
+
+AQUÍ INICIA LA PARTE DERECHA DEL HOME */
+
+.container {
+    background-color: rgba(44, 50, 56, 0.26);
+    width: 90%;
+    height: 84vh;
+    margin: auto;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    margin-top: 7%;
+}
+
+.izq {
+    width: 55%;
+    padding: 2% 3%;
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.student {
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+/* TENGO QUE ENCONTRAR LA FORMA DE PONER EL TEXTO EN COLOR DEGRADADO COMO EL LOGO DEL MENU */
+.frontEnd {
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    font-weight: bold;
+    font-size: 12vh;
+    text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3;
+    color: #000000;
+}
+
+.lorem {
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    font-size: 1.5em;
+    text-align:justify;
+    color: white;
+}
+
+.imagenesRef {
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ACÁ FINALIZO LA PARTE IZQUIERDA DEL HOME, PUEDO DECIR QUE ESTOY SATISFECHO CON EL TRABAJO XD 
+ ACÁ INCIA LA PARTE DERECHA DEL HOME */
+
+.der {
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    width: 40%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* ACÁ FINALIZA LA PARTE DERECHA DEL HOME
+Y ACÁ INICIO EL CONTENEDOR CON LAS SOFT Y TECHNICAL SKILLS*/
+
+#skills {
+    flex-direction: column;
+}
+
+.soft-skills {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    width: 19%;
+    height: 75%;
+    padding: 2%;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.5)
+    );
+    transition: 0.7s;
+}
+
+.tarjeta h2 {
+    text-align: center;
+}
+
+.tarjeta p {
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #ffffff;
+}
+
+.technical-skills {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* QUEDO PENDIENTE DE PONERLE ICONOS ABAJO A LA DERECHA Y DE HACER QUE SALGA UNA RECUADRO AL OPRIMIR LOS LOGOS
+ HASTA ACÁ TERMINO LAS SOFT SKILLS AND TECHNICAL SKILLS
+ 
+ 
+ACÁ INICIO LA PARTE DE LA EXPERIENCE, DEBO BUSCAR ALGUNA INSPIRACIÓN PARA CREAR UNA BUENA IMAGEN DE ORACLE AND ALURA LATAM */
+
+
+
+
+
+
+
+/* ACÁ FINALIZA LA PARTE DE LA EXPERIENCE Y DEBO CREAR UNA PAGINA DE DATOS CON REACT, PARA QUE SE VAYAN AGREGANDO A MEDIDA QUE AVANZO EN MIS ESTUDIOS (TAMBIÉN HACERLO PARA LAS SOFT AND TECHNICAL SKILLS) 
+
+INICIO LA PARTE DE CONTACT Y DEBERÍA PONER ÍCONOS DE GITHUB AND LINKEDIN*/
+
+
+
+
+#contactme {
+    margin-bottom: 3vh;
+}
+
+
+
+
+/* FINALIZO LA PARTE DE CONTACT */
